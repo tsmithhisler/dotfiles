@@ -1,0 +1,7 @@
+[user]
+	name = Tom Smithhisler
+	email = tomsmithhisler@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true

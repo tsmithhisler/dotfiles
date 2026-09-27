@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.4
+Type=Application
+Name=Gmail
+Exec=/home/tomsmithhisler/.local/bin/Gmail-webapp
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=chrome-mail.google.com__-Default
+Icon=chrome-webapp-Gmail

@@ -1,0 +1,10 @@
+[Unit]
+Description=Disable broken GPP0 ACPI wake source
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/libexec/disable-gpp0-wakeup
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+#!/bin/sh
+exec google-chrome-stable \
+  --window-name=Outlook \
+  --app=https://outlook.office.com \
+  --profile-directory=Default \
+  --no-default-browser-check \
+  --disable-features=GlobalShortcutsPortal
