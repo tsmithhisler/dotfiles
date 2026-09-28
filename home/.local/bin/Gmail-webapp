@@ -1,7 +1,9 @@
 #!/bin/sh
+# Profile directory name is shown in chrome://version.
 exec google-chrome-stable \
   --window-name=Gmail \
   --app=https://mail.google.com \
-  --user-data-dir="$HOME/.config/chrome-webapps/Gmail" \
+  --profile-directory="Default" \
   --no-default-browser-check \
+  --ozone-platform=wayland \
   --disable-features=GlobalShortcutsPortal

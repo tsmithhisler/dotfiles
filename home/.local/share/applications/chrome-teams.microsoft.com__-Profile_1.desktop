@@ -1,9 +1,8 @@
 [Desktop Entry]
-Version=1.4
 Type=Application
 Name=Teams
 Exec=/home/tomsmithhisler/.local/bin/Teams-webapp
 Terminal=false
 Categories=Network;WebBrowser;
-StartupWMClass=chrome-teams.microsoft.com__-Default
+StartupWMClass=chrome-teams.microsoft.com__-Profile_1
 Icon=chrome-webapp-Teams

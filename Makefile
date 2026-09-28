@@ -1,6 +1,6 @@
 STOW ?= stow
 
-.PHONY: all home system unstow unstow-home unstow-system restow restow-home restow-system
+.PHONY: all home system unstow unstow-home unstow-system restow restow-home restow-system gnome-shortcuts
 
 all: home system
 
@@ -25,3 +25,6 @@ restow-home:
 
 restow-system:
 	sudo $(STOW) --target=/ --restow system
+
+gnome-shortcuts:
+	dconf load /org/gnome/desktop/wm/keybindings/ < home/.config/dconf/gnome-shortcuts.ini

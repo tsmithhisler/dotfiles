@@ -1,8 +1,8 @@
 #!/bin/sh
 # Profile directory name is shown in chrome://version.
 exec google-chrome-stable \
-  --window-name=Outlook \
-  --app=https://outlook.office.com \
+  --window-name=Discord \
+  --app=https://discord.com/app \
   --profile-directory="Profile 1" \
   --no-default-browser-check \
   --ozone-platform=wayland \

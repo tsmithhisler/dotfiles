@@ -1,7 +1,9 @@
 #!/bin/sh
+# Profile directory name is shown in chrome://version.
 exec google-chrome-stable \
   --window-name=Teams \
   --app=https://teams.microsoft.com \
-  --profile-directory=Default \
+  --profile-directory="Profile 1" \
   --no-default-browser-check \
+  --ozone-platform=wayland \
   --disable-features=GlobalShortcutsPortal
