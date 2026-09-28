@@ -1,0 +1,13 @@
+#!/bin/sh
+# Reconnect the Blue Yeti after sleep so its USB audio capture starts again.
+[ "$1" = post ] || exit 0
+
+for device in /sys/bus/usb/devices/*; do
+  [ -f "$device/idVendor" ] || continue
+  [ "$(cat "$device/idVendor")" = 046d ] || continue
+  [ "$(cat "$device/idProduct")" = 0ab7 ] || continue
+
+  printf '0\n' > "$device/authorized" || exit 1
+  printf '1\n' > "$device/authorized" || exit 1
+  logger -t reset-blue-yeti "Reconnected Blue Yeti at ${device##*/} after sleep"
+done

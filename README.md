@@ -4,6 +4,14 @@ Install GNU Stow, then run `make` from this directory to link `home/` into your 
 
 GNOME window-switching shortcuts are saved in `home/.config/dconf/gnome-shortcuts.ini`. Run `make gnome-shortcuts` from a GNOME session to apply them. Stow links the file; dconf stores the active values separately.
 
+WirePlumber and PipeWire configuration in `home/.config/` keeps the Bose A2DP headphones and NVIDIA HDMI as playback choices and the Blue Microphones input. A custom ALSA card profile exposes only the Blue microphone, while WirePlumber disables Bluetooth handsfree profiles, the C920 webcam microphone, and the onboard audio card. PipeWire disables discovered AirPlay sinks. After `make home`, restart both user services to apply the audio configuration:
+
+```sh
+systemctl --user restart pipewire.service wireplumber.service
+```
+
+The `system/` package also installs a systemd sleep hook that reconnects the Blue Yeti USB device (`046d:0ab7`) after resume. It takes effect after `make system` or `make restow-system`; no service needs to be enabled. Check its result after the next suspend with `journalctl -b -t reset-blue-yeti` and confirm the microphone captures audio.
+
 After installing or changing the systemd unit, reload systemd and enable the service once:
 
 ```sh

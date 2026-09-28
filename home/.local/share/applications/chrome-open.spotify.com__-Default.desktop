@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+Exec=/home/tomsmithhisler/.local/bin/Spotify-webapp
+Terminal=false
+Categories=Network;WebBrowser;
+StartupWMClass=chrome-open.spotify.com__-Default
+Icon=spotify

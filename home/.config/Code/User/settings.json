@@ -1,8 +1,10 @@
 {
-    "chat.titleBar.openInAgentsWindow.enabled": false,
-    "workbench.browser.showInTitleBar": false,
-    "chat.viewSessions.enabled": false,
-    "chat.agent.enabled": false,
-    "chat.titleBar.signIn.enabled": false,
-    "chat.checkpoints.enabled": false
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "chat.viewSessions.enabled": false,
+  "chat.agent.enabled": false,
+  "chat.titleBar.signIn.enabled": false,
+  "chat.checkpoints.enabled": false,
+  "js/ts.experimental.useTsgo": true,
+  "git.detectWorktrees": true,
 }
