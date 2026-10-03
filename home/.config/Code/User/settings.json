@@ -7,4 +7,8 @@
   "chat.checkpoints.enabled": false,
   "js/ts.experimental.useTsgo": true,
   "git.detectWorktrees": true,
+  "workbench.browser.openLocalhostLinks": false,
+  "git.blame.editorDecoration.enabled": true,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": true
 }

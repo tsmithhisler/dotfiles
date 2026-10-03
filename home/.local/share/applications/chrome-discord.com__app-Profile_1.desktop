@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Discord
-Exec=/home/tomsmithhisler/.local/bin/Discord-webapp
-Terminal=false
-Categories=Network;WebBrowser;
-StartupWMClass=chrome-discord.com__app-Profile_1
-Icon=chrome-webapp-Discord

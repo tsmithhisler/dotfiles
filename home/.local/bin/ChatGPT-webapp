@@ -1,9 +1,0 @@
-#!/bin/sh
-# Profile directory name is shown in chrome://version.
-exec google-chrome-stable \
-  --window-name=ChatGPT \
-  --app=https://chatgpt.com/ \
-  --profile-directory="Profile 1" \
-  --no-default-browser-check \
-  --ozone-platform=wayland \
-  --disable-features=GlobalShortcutsPortal

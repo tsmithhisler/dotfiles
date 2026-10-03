@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=ChatGPT
-Exec=/home/tomsmithhisler/.local/bin/ChatGPT-webapp
-Terminal=false
-Categories=Network;WebBrowser;
-StartupWMClass=chrome-chatgpt.com__-Profile_1
-Icon=/home/tomsmithhisler/.local/share/icons/hicolor/256x256/apps/chrome-webapp-ChatGPT.png
